@@ -1,6 +1,6 @@
 # pokemoProject
 
-## To see the page , click [this](https://github.com/Mani8217/pokemoProject.git)
+## To see the page , click [this](https://mani8217.github.io/pokemoProject/)
 ## see a demo from the page
 <p align="center">
 <img src="https://media.giphy.com/media/RimwMAVDbA3CvNk5O0/giphy.gif">
