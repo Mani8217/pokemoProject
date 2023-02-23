@@ -22,21 +22,14 @@ h4,p {
 }
 .span-div{
     background-color: white;
-    padding: 5px;
+    padding: 10px;
 }
 span {
-    padding: 5px;
+    padding: 8px;
+    margin-right: 8px;
 
 }
-.span1 {
-background-color: blueviolet;
-color: white;
-margin-right: 12px;
-}
-.span2 {
-    background-color: orange;
 
-}
 
 
 .pokebal{
