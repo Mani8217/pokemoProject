@@ -15,6 +15,29 @@ header {
   
 }
 
+h4,p {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+}
+.span-div{
+    background-color: white;
+    padding: 5px;
+}
+span {
+    padding: 5px;
+
+}
+.span1 {
+background-color: blueviolet;
+color: white;
+margin-right: 12px;
+}
+.span2 {
+    background-color: orange;
+
+}
+
 
 .pokebal{
     position: absolute;
@@ -26,9 +49,10 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     width: 70%;
-    margin:20px auto
+    margin:20px auto;
+    padding-top:6px;
 }
 
 @keyframes down {
@@ -47,10 +71,17 @@ header {
 
 }
 .my-card{
-    padding: 5px;
-    border: 1px solid black;
+    position: relative;
+    transition: 0.5s;
     background-color: white;
+    background-color: rgb(234, 232, 232);
     
+}
+.my-card:hover {
+     top: -10px;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 

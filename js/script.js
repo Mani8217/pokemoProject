@@ -103,14 +103,25 @@ const pokemons =  [
       const nombre = document.createElement('h4');
       const type = document.createElement('p')
       const card = document.createElement('div');
-      const ability = document.createElement('p')
+      const span1 = document.createElement('span');
+      const span2 = document.createElement('span');
+      span1.className='span1';
+      span2.className = 'span2';
+      const spanDiv = document.createElement('div');
+      spanDiv.className = 'span-div';
+
+
       img.src = item.thumbnail;
       id.innerHTML = item.id;
       nombre.innerHTML = item.name;
       for(let i = 0; i<item.type.length; i++) {
-      ability.innerHTML += item.type[i] + " "
+        
+        span1.innerHTML = item.type[0] + " ";
+        span2.innerHTML = item.type[1]
+      
       }
-      card.append(img , id, nombre, ability);
+      spanDiv.append(span1,span2)
+      card.append(img , id, nombre,spanDiv);
       card.className='my-card';
       myContainer.appendChild(card)
   
