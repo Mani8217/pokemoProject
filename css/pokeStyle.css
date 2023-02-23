@@ -27,6 +27,8 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+    width: 70%;
+    margin:20px auto
 }
 
 @keyframes down {
