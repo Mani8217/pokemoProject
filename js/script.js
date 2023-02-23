@@ -1,3 +1,5 @@
+/*------------- create an array of the informations -----------*/
+
 const pokemons =  [
     {
       thumbnail: './assets/001.png',
@@ -118,6 +120,8 @@ const pokemons =  [
       bgColor:['green', 'gray']
     }
   ]
+      /* --------variables Declaration----------------*/ 
+
   const colors = ['purple', 'lightgray' , 'orange' , 'lightgreen' , 'lightpink'];
   const myContainer = document.querySelector('#div-container')
    pokemons.forEach(item => {
@@ -128,10 +132,16 @@ const pokemons =  [
       const spanDiv = document.createElement('div');
       spanDiv.className = 'span-div';
 
+
+       /*--------- Asigning values to variables ---------- */
+
        
       img.src = item.thumbnail;
       id.innerHTML = item.id;
       nombre.innerHTML = item.name;
+
+            /* ------------- Asigning an array of elements--------------------*/
+
       for(let i = 0; i < item.type.length; i++) {
         const span = document.createElement('span');
          span.innerHTML = item.type[i]
@@ -142,7 +152,8 @@ const pokemons =  [
          
       }
      
-   
+         /*-------------- to Append variables to an element inside the Doc --------------*/
+
       
       card.append(img , id, nombre,spanDiv);
       card.className='my-card';
