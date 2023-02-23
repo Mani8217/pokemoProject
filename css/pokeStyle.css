@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/container_bg.png');
+}
+
+header {
+    position: relative;
+    padding: 20px;
+  
+}
+
+
+.pokebal{
+    position: absolute;
+    left: 49%;
+    top: 0;
+    animation: down 2s  2s infinite;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@keyframes down {
+    from {top: 0}
+    to {top: 80%}
+}
+.pokeLogo{
+    position: relative;
+    animation: logo 2s 1 ;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+@keyframes logo {
+    from {left: 0}
+    to {left: 15%;}
+
+}
+.my-card{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+
