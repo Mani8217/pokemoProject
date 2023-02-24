@@ -1,4 +1,7 @@
-# pokemoProject
+# Pokemondex Project
+
+## to see the github page of the project click [this](https://mani8217.github.io/pokemoProject/)
+
 
 ## a demo of the project
 
