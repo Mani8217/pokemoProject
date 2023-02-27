@@ -6,7 +6,7 @@ const pokemons =  [
       id:'N°01' ,
       name: 'bulbasaur',
       type: ['plant', 'poison'],
-      bgColor:['orange','purple']
+      
       
     },
     {
@@ -14,7 +14,7 @@ const pokemons =  [
       id:'N°02',
       name: 'charmander',
       type: ['fire'],
-      bgColor:['yellow' , 'gray']
+      
       
     },
     {
@@ -22,15 +22,14 @@ const pokemons =  [
       id:'N°03',
       name: 'caterpie',
       type: ['bug'],
-      bgColor:['gray']
-      
+     
     },
     {
       thumbnail: './assets/004.png',
       id:'N°04',
       name: 'kaluna',
       type: ['bug', 'poison'],
-      bgColor:['green','gray']
+     
       
     },
     {
@@ -38,7 +37,7 @@ const pokemons =  [
       id:'N°05',
       name: 'ratata',
       type: ['plant'],
-      bgColor:['green','orange']
+      
     
     },
     {
@@ -46,21 +45,21 @@ const pokemons =  [
       id:'N°06',
       name: 'pikachu',
       type: ['normal'],
-      bgColor:['yellow', 'pink']
+      
     },
     {
       thumbnail: './assets/007.png',
       id:'N°07',
       name: 'vulpix',
       type: ['fire', 'plant'],
-      bgColor:['pink','purple']
+      
     },
     {
       thumbnail: './assets/008.png',
       id:'N°08',
       name: 'jigglypuff',
       type: ['normal', 'fairy'],
-      bgColor:['orange', 'gray']
+      
       
     },
     {
@@ -68,56 +67,56 @@ const pokemons =  [
       id:'N°09',
       name: 'ice',
       type: ['bug'],
-      bgColor:['lightgray','pink']
+     
     },
     {
       thumbnail: './assets/010.png',
       id:'N°10',
       name: 'ground',
       type: ['electrical'],
-      bgColor:['yellow', 'purple']
+      
     },
     {
       thumbnail: './assets/011.png',
       id:'N°11',
       name: 'ghost',
       type: ['poison'],
-      bgColor:['gray', 'pink']
+      
     },
     {
       thumbnail: './assets/012.png',
       id:'N°12',
       name: 'deer',
       type: ['fire'],
-      bgColor:['green','yellow']
+      
     },
     {
       thumbnail: './assets/013.png',
       id:'N°13',
       name: 'dark',
       type: ['fairy'],
-      bgColor:['gray', 'pink']
+      
     },
     {
       thumbnail: './assets/014.png',
       id:'N°14',
       name: 'stell',
       type: ['normal', 'electrical'],
-      bgColor:['purple', 'orange']
+     
     },
     {
       thumbnail: './assets/015.png',
       id:'N°15',
       name: 'cat',
       type: ['fire'],
-      bgColor:['yellow', 'pink']
+      
     },
     {
       thumbnail: './assets/016.png',
       id:'N°16',
       name: 'rock',
       type: ['fairy', 'poison'],
-      bgColor:['green', 'gray']
+     
     }
   ]
       /* --------variables Declaration----------------*/ 
@@ -145,7 +144,6 @@ const pokemons =  [
       for(let i = 0; i < item.type.length; i++) {
         const span = document.createElement('span');
          span.innerHTML = item.type[i]
-         span.style.backgroundColor = item.bgColor[i];
          span.style.color='white'
          spanDiv.append(span);
         
@@ -161,5 +159,13 @@ const pokemons =  [
   
   
   
+  })
+  let j = 0;
+  document.querySelectorAll('span').forEach(sp => {
+    sp.style.backgroundColor = colors[j];
+    j++;
+    if( j >= colors.length){
+      j=0
+    }
   })
   
